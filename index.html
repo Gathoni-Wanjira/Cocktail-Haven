@@ -17,17 +17,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="./script.js" defer></script>
   </head>
 
   <body>
-    <section class="header">
+    <section class="header" id="header">
       <nav>
         <div class="nav-links" id="NavLinks">
           <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">CATEGORIES</a></li>
-            <li><a href="#">REVIEWS</a></li>
-            <li><a href="#">CONTACT US</a></li>
+            <li><a href="#header">HOME</a></li>
+            <li><a href="#Categories-section">CATEGORIES</a></li>
+            <li><a href="#Reviews">REVIEWS</a></li>
+            <li><a href="#footer">CONTACT US</a></li>
           </ul>
         </div>
       </nav>
@@ -43,6 +44,12 @@
         <form><input type="text" id="Search-cocktail" placeholder="SEARCH FOR DRINK.."></form>
       </div>
     </section>
+
+
+    <section id="search-results" class="hide" >
+
+    </section>
+
 
     <section id="Categories-section">
       <h2>DRINKS CATEGORIES.</h2>
@@ -153,12 +160,8 @@
       </div>
       <br />
       <br />
-
-      <!-- <p>Made with <i class="fa fa-heart-o"></i> by Gathoni Wanjira!</p> -->
-
       <br />
       <br />
     </section>
   </body>
-  <script src="./sript.js"></script>
 </html>
