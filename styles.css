@@ -73,8 +73,9 @@ nav img {
 
 .Text-box p {
   margin: 10px 0 40px;
-  font-size: 14px;
+  font-size: 15px;
   color: #ede0d4;
+  font-weight: 700;
 }
 
 #Search-cocktail {
@@ -87,12 +88,14 @@ nav img {
   display: inline-block;
   padding: 12px 34px;
   cursor: pointer;
+  border-radius: 20px;
+  font-weight: 300;
 }
 
-.hero-button:hover {
-  border: 1px solid #ffd60a;
+#Search-cocktail:hover {
+  border: 1px solid #cd9777;
   transition: 1s;
-  background: #ffd60a;
+  background: #cd9777;
 }
 
 #Categories-section h2 {
@@ -167,10 +170,24 @@ nav img {
 }
 
 .reviews-col .fa {
-  color: #f44336;
+  color: #472c1b;
 }
 
 #Reviews h1 {
   text-decoration: underline;
   color: #000814;
+}
+
+#footer {
+  text-align: center;
+
+  margin: auto;
+}
+
+#footer-fa {
+  color: #472c1b;
+  display: inline-block;
+  margin-right: 0px 13px;
+  cursor: pointer;
+  padding: 18px 0;
 }
