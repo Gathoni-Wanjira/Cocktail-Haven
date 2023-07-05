@@ -98,6 +98,11 @@ nav img {
   background: #cd9777;
 }
 
+/* #results_section {
+   width: 100%;
+
+} */
+
 #results-section h2 {
   margin-top: 80px;
   text-align: center;
@@ -106,17 +111,22 @@ nav img {
 }
 
 #results {
-  display: inline-flex;
-  gap: 80px;
+  display: flex;
+  gap: 25px;
   margin-top: 70px;
   padding: 40px;
+  /* width: 100%; */
+  justify-content: center;
+}
+#results div {
+  flex: 0 1 250px;
 }
 
 #results h5 {
   color: #ede0d4;
   background-color: #472c1b;
   padding: 10px;
-  width: 100%;
+  /* width: 100%; */
   border-radius: 20px;
   border: 0;
   margin-top: 20px;
@@ -131,11 +141,11 @@ nav img {
 }
 
 .hide {
-  /* display: none; */
+  display: none;
 }
 
 .visible {
-  display: flex;
+  display: block;
 }
 
 #Categories-section h2 {
