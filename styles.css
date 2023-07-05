@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://images.unsplash.com/photo-1514361892635-6b07e31e75f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29ja3RhaWwlMjBtaXhvbG9naXN0fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60");
+  background-repeat: no-repeat;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 150px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  display: block;
+  margin: auto;
+  background: #ffd60a;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.Text-box {
+  width: 90%;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Text-box h1 {
+  font-size: 62px;
+}
+
+.Text-box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #fff;
+}
+
+#Search-cocktail {
+  color: #fff;
+  text-decoration: none;
+  border: 0.5px solid #fff;
+  position: relative;
+  background: transparent;
+  font-size: 13px;
+  display: inline-block;
+  padding: 12px 34px;
+  cursor: pointer;
+}
+
+.hero-button:hover {
+  border: 1px solid #ffd60a;
+  transition: 1s;
+  background: #ffd60a;
+}
+
+#Categories-section h2 {
+  margin-top: 80px;
+  text-align: center;
+  color: #000814;
+  text-decoration: underline;
+}
+
+#categories {
+  display: inline-flex;
+  gap: 230px;
+  margin-top: 70px;
+  padding: 40px;
+}
+#categories button {
+  color: #ede0d4;
+  background-color: #472c1b;
+  padding: 15px;
+  width: 150%;
+  border-radius: 20px;
+  border: 0;
+}
