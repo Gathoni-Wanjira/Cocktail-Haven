@@ -1,13 +1,25 @@
 
-const form = document.querySelector("form").addEventListener('submit', fetchUserInput)
+document.querySelector("form").addEventListener('submit', (e) => {
+        e.preventDefault()
+        fetchUserInput();
+})
+
 const userInput = document.querySelector("input")
 
+function fetchUserInput() {
 
-function fetchUserInput (){
+        console.log('mojito')
 
-fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${userInput}`)       
-.then(response =>response.json())
-.then(cocktailsByName => console.log(cocktailsByName))
-
+        fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${userInput.value}`)
+                .then(response => {
+                        return response.json()
+                })
+                .then(search_results => {
+                        console.log(search_results)
+                        array.forEach(result=> {
+                                // dynamic nodes
+                                // Assign
+                                // Append
+                        });
+                })
 }
-           
