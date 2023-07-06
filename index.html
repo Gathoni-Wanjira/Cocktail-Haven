@@ -13,6 +13,9 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="./script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -31,10 +34,10 @@
         <div class="Text-box">
             <h1>HERE TO QUENCH YOUR THIRST.</h1>
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quis,
-                qui cupiditate id dicta magnam velit delectus alias libero minus
-                nesciunt. <br />Sit officiis vel ducimus, doloremque distinctio
-                officia laborum.
+                At <em>Cocktail Haven</em> we are here to offer the best drink experiences for you.We offer our clients
+                an opportunity<br />to explore and familiarize with different types of drinks and be comfortable to
+                order them by <br />
+                providing ingredients and instructions on how to make them!
             </p>
             <form>
                 <input type="text" id="Search-cocktail" placeholder="SEARCH FOR DRINK.." />
@@ -46,27 +49,34 @@
         <h2>SEARCH RESULTS.</h2>
 
         <div id="results">
-            <div id="a-result">
+            <div id="alcoholic">
                 <img src="https://images.unsplash.com/photo-1615553186013-06b13fe822e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFsY29ob2xpYyUyMGRyaW5rc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
                     alt="alcoholic" />
-                <h5 id="alcoholic-cocktails">RESULTS NAME</h5>
+                <ul class="layer-results">
+
+                    <h5 id="alcoholic-cocktails">RESULTS NAME</h5>
             </div>
 
             <div id="Non-Alcoholic">
                 <img src="https://images.unsplash.com/photo-1630140917603-b833c123e443?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bm9uJTIwYWxjb2hvbGljJTIwY29ja3RhaWx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
                     alt="Non-Alcoholic" />
-                <h5 id="alcoholic-cocktails">RESULTS NAME</h5>
+                <ul class="layer-results">
+
+                    <h5 id="alcoholic-cocktails">RESULTS NAME</h5>
             </div>
 
             <div id="Ordinary-drinks">
                 <img src="https://images.unsplash.com/photo-1620360289100-030b032e5a27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aWNlZCUyMGNvZmZlZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
                     alt="Ordinary-drinks" />
+
+
                 <h5 id="alcoholic-cocktails">RESULTS NAME</h5>
             </div>
 
             <div id="Cocktails">
                 <img src="https://images.unsplash.com/photo-1546171753-97d7676e4602?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGFsY29ob2xpYyUyMGNvY2t0YWlsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
                     alt="Cocktails" />
+
                 <h5 id="alcoholic-cocktails">RESULTS NAME</h5>
             </div>
         </div>
@@ -76,30 +86,39 @@
         <h2>DRINKS CATEGORIES.</h2>
 
         <div id="categories">
-            <div id="alcoholic">
+            <div id="Alco" class="layer-card">
                 <img src="https://images.unsplash.com/photo-1615553186013-06b13fe822e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFsY29ob2xpYyUyMGRyaW5rc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
                     alt="alcoholic" />
+
                 <button id="alcoholic-cocktails">ALCOHOLIC</button>
             </div>
 
-            <div id="Non-Alcoholic">
+            <div id="Non-Alco" class="layer-card">
                 <img src="https://images.unsplash.com/photo-1630140917603-b833c123e443?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bm9uJTIwYWxjb2hvbGljJTIwY29ja3RhaWx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
                     alt="Non-Alcoholic" />
+
                 <button id="nonAlcoholic-cocktails">NON-ALCOHOLIC</button>
             </div>
 
-            <div id="Ordinary-drinks">
+            <div id="Ordi-drinks" class="category-card">
                 <img src="https://images.unsplash.com/photo-1620360289100-030b032e5a27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aWNlZCUyMGNvZmZlZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
                     alt="Ordinary-drinks" />
+
+
                 <button id="Ordinary-drinks">ORDINARY-DRINKS</button>
             </div>
 
-            <div id="Cocktails">
+            <div id="Cockta" class="category-card">
                 <img src="https://images.unsplash.com/photo-1546171753-97d7676e4602?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGFsY29ob2xpYyUyMGNvY2t0YWlsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
                     alt="Cocktails" />
                 <button id="Cocktails">COCKTAILS</button>
             </div>
         </div>
+    </section>
+
+    <section id="drinks">
+
+
     </section>
 
     <section id="Reviews">
@@ -127,7 +146,7 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
+
                 </div>
             </div>
 
@@ -157,7 +176,7 @@
         <h1>CONTACT US.</h1>
         <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing vitae cupiditate
-            libero elit. In harum laborum nisi modi ex quis.<br />
+            libero elit. In harumodi ex quis.<br />
             Autem obcaecati qui fugiat. Laboriosam ipsa repudiandae nostrum enim
             nisi consequatur.
         </p>
