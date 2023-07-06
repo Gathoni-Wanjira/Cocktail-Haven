@@ -47,22 +47,22 @@ The following have been used on this project:
 
 - HOME SECTION.
 
-    <img src="./images/Home.jpeg" alt="Home">
+    <img src="./images/Home.png" alt="Home">
 
 - CATEGORIES SECTION.
 
-   <img src="./images/Categories.jpeg" alt="Categories" />
+   <img src="./images/Categories.png" alt="Categories" />
 
 
 - REVIEWS SECTION. 
  
 
-   <img src="./images/Reviews.jpeg" alt="Reviews" />
+   <img src="./images/Reviews.png" alt="Reviews" />
 
 
 - SAMPLE CATEGORIES CLICK RESULTS. (COCKTAILS)
 
-   <img src="./images/Cocktails.jpeg" alt="Cocktails" />
+   <img src="./images/Cocktails.png" alt="Cocktails" />
 
 
 ## AUTHOR  
