@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Raleway", sans-serif;
 }
 
 .header {
@@ -98,11 +99,6 @@ nav img {
   background: #cd9777;
 }
 
-/* #results_section {
-   width: 100%;
-
-} */
-
 #results-section h2 {
   margin-top: 80px;
   text-align: center;
@@ -115,7 +111,6 @@ nav img {
   gap: 25px;
   margin-top: 70px;
   padding: 40px;
-  /* width: 100%; */
   justify-content: center;
 }
 #results div {
@@ -126,7 +121,6 @@ nav img {
   color: #ede0d4;
   background-color: #472c1b;
   padding: 10px;
-  /* width: 100%; */
   border-radius: 20px;
   border: 0;
   margin-top: 20px;
@@ -243,4 +237,50 @@ nav img {
   margin-right: 0px 13px;
   cursor: pointer;
   padding: 18px 0;
+}
+
+#results > div {
+  position: relative;
+}
+
+#categories > div {
+  position: relative;
+}
+#results > div li {
+  position: absolute;
+  top: 0px;
+  display: inline-block;
+  width: 100%;
+  left: 0px;
+  right: 0px;
+  height: 48px;
+  z-index: 1000;
+}
+
+#drinks {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+#drinks > div {
+  flex: 0 1 240px;
+}
+#drinks > div > img {
+  width: 100%;
+  border-radius: 8px;
+}
+#drinks > div > p.drink-name {
+  padding: 2px 12px;
+  font-weight: bold;
+}
+#drinks > div > p.drink-link {
+  padding: 2px 12px;
+  color: #472c1b;
+  font-weight: 200;
 }
