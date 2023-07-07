@@ -1,0 +1,58 @@
+ <div id="alcoholic">
+                <img src="https://images.unsplash.com/photo-1615553186013-06b13fe822e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFsY29ob2xpYyUyMGRyaW5rc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="alcoholic" />
+                
+
+                    <h5 id="alcoholic-cocktails">RESULTS NAME</h5>
+            </div>
+
+            <div id="Non-Alcoholic">
+                <img src="https://images.unsplash.com/photo-1630140917603-b833c123e443?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bm9uJTIwYWxjb2hvbGljJTIwY29ja3RhaWx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="Non-Alcoholic" />
+                
+
+                    <h5 id="alcoholic-cocktails">RESULTS NAME</h5>
+            </div>
+
+            <div id="Ordinary-drinks">
+                <img src="https://images.unsplash.com/photo-1620360289100-030b032e5a27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aWNlZCUyMGNvZmZlZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="Ordinary-drinks" />
+
+
+                <h5 id="alcoholic-cocktails">RESULTS NAME</h5>
+            </div>
+
+            <div id="Cocktails">
+                <img src="https://images.unsplash.com/photo-1546171753-97d7676e4602?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGFsY29ob2xpYyUyMGNvY2t0YWlsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                    alt="Cocktails" />
+
+                <h5 id="alcoholic-cocktails">RESULTS NAME</h5>
+            </div>
+---
+
+  const clickDrink = document.createElement("div") 
+            clickDrink.className = "modal-content"
+
+             const clickImg = document.createElement("img")
+            clickImg.className = "modal-image"
+            clickImg.src = drink.strDrinkThumb
+
+            const clickName = document.createElement("p")
+            clickName.className = "modal-name"
+            clickName.innerText = drink.strDrink
+
+            const sectionTitle = document.createElement("p")
+            sectionTitle.className = "modal-section-title"
+            sectionTitle.innerText = "Ingredients."
+
+
+            const clickList = document.createElement("div")
+            clickList.className = "ingredient-container"
+
+              const instructionsTitle = document.createElement("p");
+            instructionsTitle.className = "modal-section-title"
+            instructionsTitle.innerText = "Instructions"
+
+            const clickDescription = document.createElement("p")
+            clickDescription.className = "modal-description"
+            clickDescription.innerText = drink.strInstructions
