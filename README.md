@@ -65,6 +65,10 @@ The following have been used on this project:
    <img src="./images/Cocktails.png" alt="Cocktails" />
 
 
+- DRINK DETAILS.
+
+   ![Drink Details](./images/Modal.jpeg)
+
 ## AUTHOR  
 ---
 
