@@ -67,7 +67,9 @@ The following have been used on this project:
 
 - DRINK DETAILS.
 
-   ![Drink Details](./images/Modal.jpeg)
+ <img src="./images/Modal.png" alt="Drink Details" />
+
+
 
 ## AUTHOR  
 ---
