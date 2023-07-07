@@ -17,7 +17,6 @@ function fetchUserInput() {
                         fetchResults(search_results);
 
                 })
-
 }
 
 function fetchResults(search_results) {
@@ -33,8 +32,6 @@ function fetchResults(search_results) {
 
                         const ingredients_results = document.createElement("li")
                         ingredients_results.textContent = result.strIngredient
-
-
 
                         const results_title = document.createElement("h5")
                         results_title.textContent = result.strDrink
@@ -88,6 +85,7 @@ function getCategories(category) {
                                 const drinksLink = document.createElement("p")
                                 drinksLink.className = "drink-link"
                                 drinksLink.innerText = "See Ingredients"
+                                console.log(`drink${(drink)}`)
                                 drinksLink.addEventListener('click', (e) => {
                                         seeIngredients(drink);
                                 })
@@ -136,55 +134,61 @@ document.querySelector("#Cockta").addEventListener('click', (e) => {
 
 })
 
-function seeIngredients(drink) {
+function seeIngredients(drinkObject) {
+        let drink;
 
-const finalDrinkObject = formatIngredients(drink);
+        fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${drinkObject.idDrink}`)
+                .then(response => {
+                        return response.json()
+                })
+                .then(data => {
+                        drink = data.drinks[0]
 
-
-
-const clickDrink = document.createElement("div")
-
-
-
-const clickImg = document.createElement("img")
-clickImg.src = drink.strDrinkThumb
-
-const clickName = document.createElement("p")
-clickName.innerText = drink.strDrink
-
-const clickList = document.createElement("div")
-console.log(finalDrinkObject)
-finalDrinkObject.ingredients.forEach (singleIngredient => {
-
-        const ingredientEntry = document.createElement("p")
-        ingredientEntry.innerText = singleIngredient
-
-        clickList.appendChild(ingredientEntry);
-        
-
-})
+                        const finalDrinkObject = formatIngredients(drink);
+                        const clickDrink = document.createElement("div")
 
 
-const clickDescription = document.createElement("p")
-clickDescription.innerText =drink.strInstructions
+
+                        const clickImg = document.createElement("img")
+                        clickImg.src = drink.strDrinkThumb
+
+                        const clickName = document.createElement("p")
+                        clickName.innerText = drink.strDrink
+
+                        const clickList = document.createElement("div")
+                        console.log(finalDrinkObject)
+                        finalDrinkObject.ingredients.forEach(singleIngredient => {
+
+                                const ingredientEntry = document.createElement("p")
+                                ingredientEntry.innerText = singleIngredient
+
+                                clickList.appendChild(ingredientEntry);
+
+                        })
 
 
-clickDrink.appendChild(clickImg);
-clickDrink.appendChild(clickName);
-clickDrink.appendChild(clickList);
-clickDrink.appendChild(clickDescription);
-console.log(clickList);
-console.log(clickDescription);
+                        const clickDescription = document.createElement("p")
+                        clickDescription.innerText = drink.strInstructions
 
 
-document.body.appendChild(clickDrink);
+                        clickDrink.appendChild(clickImg);
+                        clickDrink.appendChild(clickName);
+                        clickDrink.appendChild(clickList);
+                        clickDrink.appendChild(clickDescription);
 
+
+
+                        document.body.appendChild(clickDrink);
+
+
+                })
 
 }
 
 
 
 function formatIngredients(drink) {
+        console.log(drink)
         const cleanObject = {}
         Object.keys(drink).forEach(key => {
                 if (drink[key] !== undefined && drink[key] !== null && drink[key] != '') {
@@ -201,7 +205,7 @@ function formatIngredients(drink) {
                 } else if (!key.startsWith('strIngredient') && !key.startsWith('strMeasure')) {
                         updatedObject[key] = cleanObject[key]
                 } else {
-                        if (key.startsWith('strIngredient')) {     
+                        if (key.startsWith('strIngredient')) {
                                 let index = key.replace('strIngredient', '')
                                 let quantity = cleanObject[`strMeasure${index}`]
                                 let ingredient = cleanObject[key]
@@ -209,6 +213,6 @@ function formatIngredients(drink) {
                         }
                 }
         })
-        
+
         return updatedObject
 }
