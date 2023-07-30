@@ -82,15 +82,16 @@ nav img {
 #Search-cocktail {
   color: #ede0d4;
   text-decoration: none;
-  border: 0.5px solid #ede0d4;
+  /* border: 0.5px solid #ede0d4; */
   position: relative;
-  background: transparent;
+  background-color: #fff;
   font-size: 13px;
   display: inline-block;
   padding: 12px 34px;
   cursor: pointer;
   border-radius: 20px;
   font-weight: 300;
+  border: none;
 }
 
 #Search-cocktail:hover {
@@ -133,6 +134,10 @@ nav img {
   object-fit: fill;
   display: flex;
 }
+
+#results div:hover img {
+  opacity: 0.7;
+  }
 
 .hide {
   display: none;
