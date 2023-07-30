@@ -33,9 +33,15 @@ function fetchResults(search_results) {
 
     const results_container = document.querySelector("#results")
     results_container.innerHTML = ""
-    search_results.drinks.forEach((result, index) => {
+    search_results.drinks.forEach((result, index) => {  
         if (index < 4) {
             const result_div = document.createElement("div")
+
+            result_div.addEventListener("click", ()=> {
+                seeIngredients(result);
+
+                
+            })
 
             const results_image = document.createElement("img")
             results_image.src = result.strDrinkThumb
