@@ -47,7 +47,11 @@ The following have been used on this project:
 
 - HOME SECTION.
 
-    <img src="./images/Home.png" alt="Home">
+    <img src="./images/Home.png" alt="Home"> 
+
+- SEARCH RESULTS CARD SECTION.
+
+    <img src="./images/ResultsCard.jpeg" alt="Search Results">
 
 - CATEGORIES SECTION.
 
@@ -67,7 +71,7 @@ The following have been used on this project:
 
 - DRINK DETAILS.
 
- <img src="./images/Modal.png" alt="Drink Details" />
+  <img src="./images/Modal.png" alt="Drink Details" />
 
 
 
